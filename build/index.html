@@ -1,1 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/react-node/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/react-node/logo192.png"/><link rel="manifest" href="/react-node/manifest.json"/><title>React App</title><link href="/react-node/static/css/main.957ec9fe.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,a,l=r[0],f=r[1],i=r[2],c=0,s=[];c<l.length;c++)a=l[c],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var f=t[l];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/react-node/";var l=this["webpackJsonpmern-task"]=this["webpackJsonpmern-task"]||[],f=l.push.bind(l);l.push=r,l=l.slice();for(var i=0;i<l.length;i++)r(l[i]);var p=f;t()}([])</script><script src="/react-node/static/js/2.2db284ff.chunk.js"></script><script src="/react-node/static/js/main.6756b03e.chunk.js"></script></body><script src="../server.js"></script></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/react-node/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/react-node/logo192.png"/><link rel="manifest" href="/react-node/manifest.json"/><title>React App</title><link href="/react-node/static/css/main.957ec9fe.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,a,l=r[0],f=r[1],i=r[2],c=0,s=[];c<l.length;c++)a=l[c],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var f=t[l];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/react-node/";var l=this["webpackJsonpmern-task"]=this["webpackJsonpmern-task"]||[],f=l.push.bind(l);l.push=r,l=l.slice();for(var i=0;i<l.length;i++)r(l[i]);var p=f;t()}([])</script><script src="/react-node/static/js/2.2db284ff.chunk.js"></script><script src="/react-node/static/js/main.6756b03e.chunk.js"></script></body><script>const express = require('express');
+  const promMid = require('express-prometheus-middleware');
+  const app = express();
+
+  const PORT = process.env.PORT || 5000
+
+  app.listen(PORT, () => {
+    console.log(`Server Chal Gya...! ${PORT}`)
+  })
+
+
+  app.get('/', (req, res) => {
+    res.send({ message: "Server is Running" })
+  })
+
+  app.get('/time', (req, res) => {
+    if (req.headers.mysecrettoken?.length) {
+      return res.send(
+        {
+          properties: {
+            epoch: {
+              description: Date.now(),
+              type: 'number',
+            }
+          },
+          required: ['epoch'],
+          'type': 'object'
+        }
+      )
+    }
+    res.status(403).send({ success: false })
+  })
+
+  app.get('/metrics', (req, res, next) => {
+    if (req.headers.mysecrettoken?.length) {
+      return next()
+    }
+    res.status(403).send({ success: false })
+  })
+
+  app.use(promMid({
+    metricsPath: '/metrics',
+    collectDefaultMetrics: true,
+    requestDurationBuckets: [0.1, 0.5, 1, 1.5]
+  }))
+
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, './build/index.html'));
+  });</script></html>
