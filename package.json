@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
-  "main": "server.js",
+  "homepage": "https://hussainmansoor876.github.io/react-node",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,6 +11,7 @@
     "axios": "^0.20.0",
     "express": "^4.17.1",
     "express-prometheus-middleware": "^0.9.6",
+    "gh-pages": "^3.1.0",
     "moment": "^2.29.0",
     "prom-client": "^12.0.0",
     "react": "^16.13.1",
@@ -18,9 +19,11 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
+    "server": "node server.js",
     "build": "react-scripts build",
-    "dev": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
