@@ -1,4 +1,3 @@
-const express = require('express');
 import express from 'express'
 import promMid from 'express-prometheus-middleware'
 const app = express();
