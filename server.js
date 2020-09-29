@@ -1,5 +1,6 @@
 const express = require('express');
-const promMid = require('express-prometheus-middleware');
+import express from 'express'
+import promMid from 'express-prometheus-middleware'
 const app = express();
 
 const PORT = process.env.PORT || 5000
